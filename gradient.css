@@ -1,0 +1,105 @@
+/*PHẦN TÙY CHỈNH GIAO DIỆN*/
+.container.dark-theme {
+  background-color: #313131; /* Màu nền tối */
+  color: #ffffff; /* Màu chữ sáng */
+}
+
+.container.dark-theme .menu a {
+  color: #ffffff; /* Màu chữ trắng cho các mục "Trang chủ", "Giải trí" */
+}
+
+.container.dark-theme .contact-info a {
+  color: #2196f3; /* Màu link khi dark theme */
+}
+
+.container.dark-theme .contact-header a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  background-image: linear-gradient(60deg, #ff5e5e, #40efc6, #ff5aec);
+  background-clip: text; /* Tiêu chuẩn, cho các trình duyệt hiện đại */
+  -webkit-background-clip: text; /* Dành cho các trình duyệt WebKit cũ */
+  color: transparent; /* Màu LN2k4 */
+}
+
+.container.dark-theme .contact-item i {
+  color: #e0e0e0; /* Màu icon*/
+}
+.container.dark-theme .contact-label {
+  color: #e0e0e0; /* Màu chữ khi bật dark theme */
+}
+
+.container.dark-theme .caption,
+.container.dark-theme #message,
+.container.dark-theme .feedback {
+  border: 1px solid #666; /* Màu viền tối hơn */
+  background-color: #3a3a3a; /* Màu nền tối */
+  color: #ffffff; /* Màu chữ khi bật dark theme */
+}
+.container.dark-theme .fv-button {
+  background-color: #2196f3;
+}
+.container.dark-theme .fv-button:hover {
+  background-color: #003ec4; /* Màu nền khi hover trong dark theme */
+}
+.container.dark-theme .send-button {
+  background-color: #3a3a3a;
+  color: #ffffff;
+}
+
+.container.dark-theme .quote-box p {
+  color: #ffffff;
+}
+
+/* Đảm bảo hiệu ứng chuyển đổi mượt mà */
+.container {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* CSS cho nút gạt */
+.switch {
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+  width: 45px; /* Kích thước của nút gạt */
+  height: 21px;
+}
+
+.switch input {
+  opacity: 0; /* Ẩn checkbox */
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc; /* Màu nền mặc định */
+  transition: 1.5s; /* Hiệu ứng chuyển đổi */
+  border-radius: 34px; /* Bo tròn góc */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 3px; /* Vị trí của phần viên tròn */
+  bottom: 3px;
+  background-color: white; /* Màu của viên tròn */
+  transition: 0.4s; /* Hiệu ứng chuyển đổi */
+  border-radius: 50%; /* Bo tròn viên tròn */
+}
+
+/* Khi checkbox được chọn (gạt sang phải) */
+input:checked + .slider {
+  background-color: #2196f3; /* Màu nền khi được chọn */
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px); /* Di chuyển viên tròn sang bên phải */
+}

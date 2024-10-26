@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nhạc</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="gradient.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="giaodien">
+        <label class="switch">
+          <input type="checkbox" id="themeToggle" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div class="header">
+        <div class="menu">
+          <a href="index.html" id="home">Trang chủ</a>
+          <a href="giaitri.html" id="giaitri">Giải trí</a>
+        </div>
+      </div>
+
+      <div class="contact-header">
+        <img src="images/image.jpg" alt="Ảnh đại diện" class="avatar" />
+        <div class="contact-text">
+          <a href="index.html"> Nguyễn Hồ Quang Khải </a>
+          <i class="fa-solid fa-circle-check" style="color: #003ec4"></i>
+        </div>
+      </div>
+
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fa-brands fa-studiovinari"></i>
+          <span class="contact-label">Học vấn:</span>
+          <a href="https://www.facebook.com/TruongDHGiaothongvantaiTPHCM" target="_blank"
+            >Trường Đại học GTVT TP.HCM</a
+          >
+        </div>
+        <div class="contact-item">
+          <i class="fab fa-facebook"></i>
+          <span class="contact-label">Facebook:</span>
+          <a href="https://www.facebook.com/khaizxje" target="_blank"
+            >Nguyễn Hồ Quang Khải</a
+          >
+        </div>
+        <div class="contact-item">
+          <i class="fab fa-instagram"></i>
+          <span class="contact-label">Instagram:</span>
+          <a href="https://www.instagram.com/kiyotakha_i" target="_blank"
+            >kiyotakha_i</a
+          >
+        </div>
+        <div class="contact-item">
+          <i class="fa-regular fa-envelope-open"></i>
+          <span class="contact-label">Gmail:</span>
+          <a href="mailto:nhulacngoc@gmail.com">knguyenhoquang@gmail.com</a>
+        </div>
+      </div>
+
+      <div class="more-inf">
+        <div class="caption">
+          <p>
+            Mình thích bài này vì lyrics nghe rất chill. 
+            Nhấn vào ảnh Spotify để nghe cùng mình nhé!
+          </p>
+        </div>
+        <div class="listen">
+          <img src="images/spot.jpg" class="spot" id="spotImage" />
+        </div>
+        <audio id="audioPlayer" src="staywithme.mp3"></audio>
+        <div class="lyrics">
+          <p>To you, yes, my love to you</p>
+          <p>Yes, my love to you, you, to you</p>
+          <p>私は私 貴方は貴方と</p>
+          <p>昨夜言ってた そんな気もするわ</p>
+          <p>グレイのジャケットに</p>
+          <p>見覚えがある コーヒーのしみ</p>
+          <p>相変らずなのね</p>
+          <p>ショーウィンドウに 二人映れば</p>
+          <p>Stay with me</p>
+          <p>真夜中のドアをたたき</p>
+          <p>帰らないでと泣いた</p>
+          <p>あの季節が 今 目の前</p>
+          <p>Stay with me</p>
+          <p>口ぐせを言いながら</p>
+          <p>二人の瞬間を抱いて</p>
+          <p>まだ忘れず 大事にしていた</p>
+          <p>恋と愛とは 違うものだよと</p>
+          <p>昨夜言われた そんな気もするわ</p>
+          <p>二度目の冬が来て</p>
+          <p>離れていった貴方の心</p>
+          <p>ふり返ればいつも</p>
+          <p>そこに 貴方を感じていたの</p>
+          <p>Stay with me</p>
+          <p>真夜中のドアをたたき</p>
+          <p>心に穴があいた</p>
+          <p>あの季節が 今 目の前</p>
+          <p>Stay with me</p>
+          <p>淋しさまぎらわして</p>
+          <p>置いたレコードの針</p>
+          <p>同じメロディ 繰り返していた</p>
+          <p>Stay with me</p>
+          <p>真夜中のドアをたたき</p>
+          <p>帰らないでと泣いた</p>
+          <p>あの季節が 今 目の前</p>
+          <p>Stay with me</p>
+          <p>口ぐせを言いながら</p>
+          <p>二人の瞬間を抱いて</p>
+          <p>まだ忘れず 暖めてた</p>
+          <p>Stay with me</p>
+          <p>真夜中のドアをたたき</p>
+          <p>帰らないでと泣いた</p>
+          <p>あの季節が 今 目の前</p>
+          <p>Stay with me</p>
+          <p>口ぐせを言いながら</p>
+          <p>二人の瞬間を抱いて</p>
+          <p>まだ忘れず 暖めてた</p>
+          <p>Stay with me</p>
+          <p>真夜中のドアをたたき</p>
+          <p>帰らないでと泣いた</p>
+          <p>あの季節が 今 目の前</p>
+          <p>Stay with me</p>
+
+        </div>
+        <div class="back">
+          <a href="index.html">Quay về</a>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

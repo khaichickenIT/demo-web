@@ -1,0 +1,31 @@
+.random {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.quote-box {
+  padding: 20px;
+  border: 2px solid #555;
+  border-radius: 10px;
+}
+
+.quote-box p {
+  color: #555;
+  text-align: center;
+}
+
+.quote-button {
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  background-color: #0051ff;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.quote-button:hover {
+  background-color: #003ec4;
+}
